@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <title>Test-balls lvl3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
+</head>
+<body>
+
+<div id="mocha"></div>
+
+<script src="https://unpkg.com/chai/chai.js"></script>
+<script src="https://unpkg.com/mocha/mocha.js"></script>
+<script src="../node_modules/sinon/pkg/sinon.js"></script>
+
+<script class="mocha-init">
+    mocha.setup('bdd');
+</script>
+<script>
+    var assert = chai.assert;
+</script>
+
+<canvas width="1000" height="800" style="border: solid; display: none" id="canvas"></canvas>
+
+
+<script src="../js/script.js"></script>
+<script src="test.js"></script>
+
+
+<script class="mocha-exec">
+    mocha.run();
+</script>
+
+</body>
+</html>
